@@ -1,7 +1,8 @@
 from time import sleep
-
+from django.conf import settings
 from celery import shared_task
 from django.core.mail import send_mail
+from django_celery.celery import app
 
 
 @shared_task()
@@ -15,3 +16,8 @@ def send_feedback_email_task(email_address, message):
         [email_address],
         fail_silently=False,
     )
+
+
+@app.task(bind=True)
+def hello_world(self):
+    return "Hello World"  
