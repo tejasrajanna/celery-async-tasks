@@ -1,4 +1,4 @@
-#!/home/tejas/Desktop/Capstone/materials-celery-async-tasks/source_code_initial/venv/bin/python3
+#!/Users/shreyas/Documents/celery-async-tasks/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
