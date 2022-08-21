@@ -18,7 +18,7 @@ def multiply_task(self, task_model):
 def repeat_multiply_task(self):
     """ run task n times """
 
-    for i in range(100):
+    for i in range(100000):
         results_db = TaskBackup(
             task_name = "multiply_task", 
             enqueued_at = datetime.now(),
