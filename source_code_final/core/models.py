@@ -8,6 +8,8 @@ class TaskBackup(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     task_name = models.CharField(max_length=25)
     task_results = models.TextField()
+    enqueued_at = models.DateTimeField()
+    received_at = models.DateTimeField()
     successful_at = models.DateTimeField()
 
     def __str__(self):

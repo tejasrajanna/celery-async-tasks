@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "feedback.apps.FeedbackConfig",
     "core.apps.CoreConfig",
     # third party apps
+    'import_export',
     "django_celery_beat",
     "django_celery_results",
 ]
